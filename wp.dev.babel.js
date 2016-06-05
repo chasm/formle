@@ -1,5 +1,5 @@
-import w, { optimize as oz } from 'webpack';
-import { entry, clientOutput, loaders } from './wp.constants';
+import w, { optimize as oz } from 'webpack'
+import { entry, clientOutput, loaders } from './wp.constants'
 
 export default {
 	entry,
@@ -11,7 +11,7 @@ export default {
 		}),
 		new oz.OccurrenceOrderPlugin(),
 		new w.HotModuleReplacementPlugin(),
-		new w.NoErrorsPlugin()
+		new w.NoErrorsPlugin(),
 	],
 	devtool: 'eval'
-};
+}

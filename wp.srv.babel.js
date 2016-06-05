@@ -1,6 +1,6 @@
-import w from 'webpack';
-import { loaders, productionPlugins } from './wp.constants';
-import nodeExternals from 'webpack-node-externals';
+import w from 'webpack'
+import { loaders, productionPlugins } from './wp.constants'
+import nodeExternals from 'webpack-node-externals'
 
 export default {
 	entry: './index.js',
@@ -16,5 +16,5 @@ export default {
 		...productionPlugins
 	],
 	target: 'node',
-	externals: [nodeExternals()]
-};
+	externals: [nodeExternals()],
+}
